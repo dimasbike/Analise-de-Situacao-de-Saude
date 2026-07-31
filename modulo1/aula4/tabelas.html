@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex" />
+	<meta name="author" content="Fiocruz, Campus Virtual" />
+	<meta name="description" content="Curso Análise de Situação de Saúde" />
+	<meta name="keywords" content="Fiocruz Curso Análise de Situação de Saúde" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../../media/icons/apple-icon-180x180.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../../media/icons/favicon-32x32.png" />
+	<link rel="manifest" href="../media/icons/manifest.json" />
+	<meta name="theme-color" content="#001833" />
+	<title>Curso Análise e Interpretação de Dados em Saúde | Mod 1 | Aula 3</title>
+	<link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="mobile-toggle-open">
+			<a class="mobile-toggle__button" tabindex="0" role="button">
+				<span class="icon material-symbols-rounded">read_more</span>
+			</a>
+		</div>
+		<div class="brand">
+			<img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png"
+				alt="Campus Virtual Fiocruz" />
+		</div>
+		<div class="title">
+			<h1>Análise e Interpretação de Dados em Saúde</h1>
+		</div>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal"
+					data-bs-target="#modal-creditos">Créditos</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="sidebar" role="navigation">
+			<div class="sidebar__inner" style="position: relative">
+				<div class="sidebar__group d-lg-none">
+					<div class="sidebar__group-item">
+						<div class="sidebar__header">
+							<span>Curso</span>
+							<a class="mobile-toggle-close" tabindex="0" role="button"><span
+									class="icon material-symbols-rounded">read_more</span></a>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="sidebar__title">
+							<h1>Análise e Interpretação de Dados em Saúde</h1>
+						</div>
+					</div>
+					<div class="sidebar__group-item">
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../index.html" class="nav-link" tabindex="0"><span
+										class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal"
+									data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded"
+										aria-hidden="true">format_list_bulleted</span>Créditos</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button id="dropdown-modulos" type="button" class="dropdown-toggle"
+								data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"
+								data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+								<span class="label">Módulos</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span
+											class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span
+											class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link"
+										href="../../modulo1/aula1/topico1.html"><strong>Módulo
+											1</strong><br />Estatística</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link"
+										href="../../modulo2/aula1/topico1.html"><strong>Módulo 2</strong><br />Séries
+										Temporais</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link"
+										href="../../modulo3/aula1/topico1.html"><strong>Módulo 3</strong><br />Análise
+										Espacial</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider">
+					<hr />
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<span class="text module">Módulo <br class="d-none d-lg-block" /><span>1</span></span>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown"
+								aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">apps</span>
+								<span class="label">Conteúdo</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span
+											class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span
+											class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title">
+									<span class="label">Módulo 1</span>
+									<span class="title">Estatística</span>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link"
+										href="../aula1/topico1.html"><strong>Aula 1: </strong>Análise exploratória e
+										descritiva</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link"
+										href="../aula2/topico1.html"><strong>Aula 2: </strong>Estatística básica</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link"
+										href="../aula3/topico1.html"><strong>Aula 3: </strong>Estatística avançada</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="divider">
+					<hr />
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<span class="text class">Aula 3</span>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown"
+								aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded"
+									aria-hidden="true">format_list_bulleted</span>
+								<span class="label">Tópicos</span>
+							</button>
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span
+											class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span
+											class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title">
+									<span class="label">Aula 3</span>
+									<span class="title">Estatística Avançada</span>
+								</li>
+								<li class="dropdown-menu__item">
+									<nav class="topic-list">
+										<a href="topico1.html" tabindex="0" role="link" class="topic-list__item"
+											aria-label="Tópico concluído" status="visited"><span
+												class="material-symbols-rounded"></span>Sobre esta aula</a>
+										<a href="topico2.html" tabindex="0" role="link" class="topic-list__item"
+											aria-label="Tópico concluído" status="visited"><span
+												class="material-symbols-rounded"></span>Introdução</a>
+										<a href="topico3.html" tabindex="0" role="link" class="topic-list__item"
+											aria-label="Tópico não concluído"><span
+												class="material-symbols-rounded"></span>Inferência Estatística</a>
+										<a href="topico4.html" tabindex="0" role="link" class="topic-list__item"
+											aria-label="Tópico não concluído"><span
+												class="material-symbols-rounded"></span>Intervalo de confiança</a>
+										<a href="topico5.html" tabindex="0" role="link" class="topic-list__item"
+											aria-label="Tópico não concluído"><span
+												class="material-symbols-rounded"></span>Modelos de Regressão</a>
+										<a href="topico6.html" tabindex="0" role="link" class="topic-list__item"
+											aria-label="Tópico não concluído"><span
+												class="material-symbols-rounded"></span>REFERÊNCIA</a>
+									</nav>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div id="page-title">
+				<div class="container">
+					<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+						<div class="col-12 col-md-10 col-lg-11">
+							<h2 class="title">
+								<span class="label">Módulo 1 | Aula 3</span>
+								<br />
+								Tabelas
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="page-content" class="">
+				<section>
+					<div class="container">
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="table-responsive">
+									<p><strong>Fontes de informação e indicadores para a construção de uma
+											ASIS.</strong></p>
+									<table class="table table-bordered align-middle">
+										<thead class="table-secondary border-dark text-center">
+											<tr>
+												<th scope="col" style="width: 20%;">Tipo de fonte</th>
+												<th scope="col" style="width: 20%;">Principais fontes de informação</th>
+												<th scope="col" style="width: 30%;">O que informam</th>
+												<th scope="col" style="width: 30%;">Possíveis usos na ASIS</th>
+											</tr>
+										</thead>
+										<tbody class="border-dark">
+											<tr>
+												<td class="fw-bold">Fontes populacionais, demográficas e socioeconômicas
+												</td>
+												<td><strong>Censo Demográfico (IBGE); Estimativas populacionais (IBGE);
+														Projeções populacionais (IBGE); PNAD Contínua; POF.</strong>
+												</td>
+												<td>Tamanho e estrutura da população, distribuição por sexo e idade,
+													raça/cor, escolaridade, renda, trabalho, moradia, saneamento,
+													consumo e condições de vida.</td>
+												<td>Definir denominadores, caracterizar a população, analisar
+													determinantes sociais, comparar grupos e territórios.</td>
+											</tr>
+											<tr>
+												<td class="fw-bold">Inquéritos e pesquisas populacionais de saúde</td>
+												<td><strong>PNS; Vigitel.</strong></td>
+												<td>Condições de saúde autorreferidas, fatores de risco e proteção,
+													utilização de serviços, hábitos de vida, vacinação, doenças
+													crônicas, saúde dos escolares.</td>
+												<td>Analisar prevalência de agravos, fatores de risco, cobertura de
+													ações preventivas e acesso aos serviços.</td>
+											</tr>
+											<tr>
+												<td class="fw-bold">Sistemas de estatísticas vitais</td>
+												<td><strong>SIM; SINASC.</strong></td>
+												<td>Óbitos, causas de morte, nascimentos, características maternas e do
+													recém-nascido.</td>
+												<td>Analisar mortalidade, mortalidade infantil, mortalidade materna,
+													natalidade, causas de morte e perfil de nascimentos.</td>
+											</tr>
+											<tr>
+												<td class="fw-bold">Sistemas de informação epidemiológica e de
+													vigilância</td>
+												<td><strong>SINAN; SIVEP-Gripe; SIVEP-Malária.</strong></td>
+												<td>Notificação e investigação de casos de doenças e agravos, surtos,
+													epidemias, internações e óbitos por agravos de notificação.</td>
+												<td>Monitorar agravos prioritários, analisar ocorrência de doenças
+													transmissíveis, surtos, sazonalidade e grupos de risco.</td>
+											</tr>
+											<tr>
+												<td class="fw-bold">Sistemas administrativos e de produção assistencial
+												</td>
+												<td><strong>SIH/SUS; SIA/SUS.</strong></td>
+												<td>Internações, procedimentos ambulatoriais, atendimentos, produção
+													assistencial, permanência hospitalar, custos.</td>
+												<td>Analisar uso dos serviços, internações por causas específicas,
+													procedimentos realizados e perfil da assistência.</td>
+											</tr>
+											<tr>
+												<td class="fw-bold">Sistemas de informação da Atenção Primária à Saúde
+												</td>
+												<td><strong>SIAPS (Acesso via SISAB).</strong></td>
+												<td>Cadastro da população, acompanhamento de condições de saúde,
+													produção das equipes, ações da APS.</td>
+												<td>Avaliar cobertura e acompanhamento na APS, monitorar condições
+													sensíveis à APS e ações desenvolvidas no território.</td>
+											</tr>
+											<tr>
+												<td class="fw-bold">Sistemas de gestão, infraestrutura e capacidade
+													instalada</td>
+												<td><strong>CNES.</strong></td>
+												<td>Estabelecimentos de saúde, leitos, equipamentos, serviços,
+													habilitações, profissionais e vínculos.</td>
+												<td>Avaliar a capacidade instalada da rede, disponibilidade de serviços,
+													distribuição territorial de recursos e oferta assistencial.</td>
+											</tr>
+											<tr>
+												<td class="fw-bold">Sistemas orçamentários e financeiros</td>
+												<td><strong>SIOPS.</strong></td>
+												<td>Receitas e despesas em saúde, aplicação de recursos pelos entes
+													federativos.</td>
+												<td>Analisar financiamento da saúde, capacidade de investimento e
+													prioridades do gasto público.</td>
+											</tr>
+											<tr>
+												<td class="fw-bold">Sistemas de imunização e prevenção</td>
+												<td><strong>SI-PNI / painéis de vacinação.</strong></td>
+												<td>Cobertura vacinal, doses aplicadas, grupos prioritários, situação
+													vacinal.</td>
+												<td>Analisar ações de prevenção, cobertura vacinal, desigualdades de
+													acesso e risco de agravos imunopreveníveis.</td>
+											</tr>
+											<tr>
+												<td class="fw-bold">Fontes sobre condições ambientais e territoriais
+												</td>
+												<td><strong>IBGE; bases municipais; dados ambientais locais; mapas e
+														informações territoriais.</strong></td>
+												<td>Saneamento, clima, poluição, uso do solo, mobilidade,
+													características urbanas e rurais, áreas de risco.</td>
+												<td>Relacionar ambiente e território à situação de saúde; identificar
+													áreas vulneráveis; apoiar análises espaciais.</td>
+											</tr>
+											<tr>
+												<td class="fw-bold">Plataformas de acesso, tabulação e visualização</td>
+												<td><strong>DATASUS; TABNET; SIDRA/IBGE; Proadess; PCDaS/Fiocruz;
+														SISAPI, SISDEF (plataformas e painéis institucionais).</strong>
+												</td>
+												<td>Consulta, tabulação, extração e visualização de dados provenientes
+													de diversas fontes.</td>
+												<td>Obter, tabular e organizar dados para análise, gráficos, tabelas,
+													mapas e comparação entre territórios.</td>
+											</tr>
+										</tbody>
+									</table>
+									<p class="figure-caption fonte small mb-5">Fonte: Elaborado pela autora (2026).</p>
+								</div>
+
+							</div>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-9 mb-5">
+								<div class="table-responsive">
+									<p><strong>Matriz de critérios para priorização de problemas.</strong></p>
+									<table class="table table-bordered align-middle text-center">
+										<thead class="border-dark">
+											<tr>
+												<th scope="col" style="width: 20%;">Critério</th>
+												<th scope="col" style="width: 28%;">Pergunta orientadora</th>
+												<th scope="col" style="width: 12.5%;">0</th>
+												<th scope="col" style="width: 12.5%;">1</th>
+												<th scope="col" style="width: 12.5%;">2</th>
+												<th scope="col" style="width: 12.5%;">3</th>
+											</tr>
+										</thead>
+										<tbody class="border-dark">
+											<tr>
+												<td class="fw-bold text-start">Magnitude</td>
+												<td class="text-start">Quantas pessoas são afetadas?</td>
+												<td>Muito baixa</td>
+												<td>Baixa</td>
+												<td>Moderada</td>
+												<td>Alta</td>
+											</tr>
+											<tr>
+												<td class="fw-bold text-start">Gravidade</td>
+												<td class="text-start">O problema provoca óbitos, internações,
+													incapacidades ou complicações?</td>
+												<td>Muito baixa</td>
+												<td>Baixa</td>
+												<td>Moderada</td>
+												<td>Alta</td>
+											</tr>
+											<tr>
+												<td class="fw-bold text-start">Desigualdade e vulnerabilidade</td>
+												<td class="text-start">O problema se concentra em grupos ou territórios
+													vulnerabilizados?</td>
+												<td>Não identificada</td>
+												<td>Pequena</td>
+												<td>Moderada</td>
+												<td>Elevada</td>
+											</tr>
+											<tr>
+												<td class="fw-bold text-start">Tendência e urgência</td>
+												<td class="text-start">O problema está aumentando ou exige resposta
+													imediata?</td>
+												<td>Estável ou reduzindo</td>
+												<td>Pequena alteração</td>
+												<td>Aumento moderado</td>
+												<td>Aumento importante ou urgência</td>
+											</tr>
+											<tr>
+												<td class="fw-bold text-start">Evitabilidade e potencial de intervenção
+												</td>
+												<td class="text-start">Existem ações capazes de prevenir ou reduzir o
+													problema?</td>
+												<td>Muito baixo</td>
+												<td>Baixo</td>
+												<td>Moderado</td>
+												<td>Alto</td>
+											</tr>
+											<tr>
+												<td class="fw-bold text-start">Viabilidade e governabilidade</td>
+												<td class="text-start">O SUS local dispõe de recursos e capacidade para
+													intervir?</td>
+												<td>Muito baixa</td>
+												<td>Baixa</td>
+												<td>Moderada</td>
+												<td>Alta</td>
+											</tr>
+										</tbody>
+									</table>
+									<p class="figure-caption fonte small mb-5">
+										<strong>Fonte:</strong> Elaborada pela autora a partir de Brasil e UFG (2015),
+										Ministério da Saúde (2023), Castellanos (2004) e Comissão Nacional sobre
+										Determinantes Sociais da Saúde (2018).
+									</p>
+								</div>
+
+
+							</div>
+
+
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+
+								<div class="table-responsive">
+									<style>
+										.vertical-header {
+											writing-mode: vertical-rl;
+											transform: rotate(180deg);
+											white-space: nowrap;
+											text-align: center;
+											vertical-align: middle;
+											
+										}
+									</style>
+									<p><strong>Exemplo fictício de preenchimento de uma matriz de priorização.</strong></p>
+									<table class="table table-bordered align-middle text-center">
+										<thead>
+											<tr>
+												<th scope="col" class="align-middle text-start" style="width: 44%;">
+													Problema
+													identificado</th>
+												<th scope="col" class="vertical-header" style="width: 8%;">Magnitude
+												</th>
+												<th scope="col" class="vertical-header" style="width: 8%;">Gravidade
+												</th>
+												<th scope="col" class="vertical-header" style="width: 8%;">Desigualdade
+												</th>
+												<th scope="col" class="vertical-header" style="width: 8%;">
+													Tendência/<br>urgência</th>
+												<th scope="col" class="vertical-header" style="width: 8%;">Potencial
+													de<br>intervenção</th>
+												<th scope="col" class="vertical-header" style="width: 8%;">Viabilidade
+												</th>
+												<th scope="col" class="vertical-header fw-bold" style="width: 8%;">Total
+												</th>
+											</tr>
+										</thead>
+										<tbody class="border-dark">
+											<tr>
+												<td class="text-start">Elevada ocorrência de hospitalizações por SRAG em
+													crianças menores de dois anos.</td>
+												<td>3</td>
+												<td>2</td>
+												<td>3</td>
+												<td>2</td>
+												<td>3</td>
+												<td>2</td>
+												<td class="fw-bold">15</td>
+											</tr>
+											<tr>
+												<td class="text-start">Concentração de óbitos por SRAG em pessoas com 65
+													anos ou mais.</td>
+												<td>2</td>
+												<td>3</td>
+												<td>3</td>
+												<td>2</td>
+												<td>2</td>
+												<td>2</td>
+												<td class="fw-bold">14</td>
+											</tr>
+											<tr>
+												<td class="text-start">Aumento sazonal da demanda por atendimento e
+													internação.</td>
+												<td>2</td>
+												<td>2</td>
+												<td>2</td>
+												<td>3</td>
+												<td>3</td>
+												<td>2</td>
+												<td class="fw-bold">14</td>
+											</tr>
+											<tr>
+												<td class="text-start">Incompletude ou atraso das informações de
+													vigilância.
+												</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>1</td>
+												<td>3</td>
+												<td>3</td>
+												<td class="fw-bold">11</td>
+											</tr>
+										</tbody>
+									</table>
+									<p class="figure-caption fonte small mb-5">
+										<strong>Fonte:</strong> Elaborada pela autora (2026).
+									</p>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</section>
+			</div>
+
+			<section>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<div class="page-nav d-flex justify-content-evenly flex-wrap gap-3"><a
+									class="fio-button fio-button-primary" href="topico2.html" rel="prev"><span
+										class="material-symbols-rounded" aria-hidden="true">west</span> Tópico
+									anterior</a><a class="fio-button fio-button-primary" href="topico4.html"
+									rel="next">Próximo tópico <span class="material-symbols-rounded"
+										aria-hidden="true">east</span></a></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer>
+				<div class="container-fluid">
+					<div class="row justify-content-center align-items-center linha-de-marcas">
+						<div class="col-12 text-center py-3">
+							<img class="img-fluid regua-logos" src="../../media/logos/regua-de-logos.png"
+								alt="Régua de logos: ICICT, Campus Virtual Fiocruz e Fiocruz" />
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
+	<script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
+	<script type="text/javascript" src="../../assets/js/sidebar.js"></script>
+	<script type="text/javascript">
+		var sidebar = new StickySidebar('.sidebar', {
+			topSpacing: 0,
+			bottomSpacing: 0,
+			containerSelector: '.main',
+			innerWrapperSelector: '.sidebar__inner',
+			minWidth: 991,
+		});
+
+		function refreshSidebarSticky() {
+			if (sidebar && typeof sidebar.updateSticky === 'function') {
+				sidebar.updateSticky();
+			}
+		}
+
+		window.addEventListener('load', refreshSidebarSticky);
+		window.addEventListener('resize', refreshSidebarSticky);
+		document.querySelectorAll('.content img').forEach(function (img) {
+			if (!img.complete) {
+				img.addEventListener('load', refreshSidebarSticky);
+				img.addEventListener('error', refreshSidebarSticky);
+			}
+		});
+	</script>
+	<script type="text/javascript" src="../../assets/js/scripts.js"></script>
+	<script type="text/javascript" src="../../assets/js/custom-anime.js"></script>
+	<script type="text/javascript" src="../../source/animate/aos/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+
+</html>

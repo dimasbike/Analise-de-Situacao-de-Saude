@@ -203,3 +203,8 @@ Tabela em mobile (colunas viram linhas, em blocos de informação)
 		content: attr(data-title);
 	}
 }
+
+caption
+{
+	display: none;
+}

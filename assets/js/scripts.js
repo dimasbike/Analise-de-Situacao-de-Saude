@@ -256,12 +256,15 @@ const modalInfos = {
 					</div>
 					<span class="h5 mb-3 d-block">Coordenação Acadêmica</span>
 					<div class="mb-5">
-						<p class="mb-1">Carolina de Campos Carvalho</p>
-						<p class="small text-muted mb-0"><em>Instituto de Comunicação e Informação Científica e Tecnológica em Saúde - Icict/Fiocruz</em></p>
-						<p class="small text-muted mb-3"><em>Coordenadora</em></p>
+						
 						<p class="mb-1">Mônica de Avelar Figueiredo Mafra Magalhães</p>
 						<p class="small text-muted mb-0"><em>Instituto de Comunicação e Informação Científica e Tecnológica em Saúde - Icict/Fiocruz</em></p>
 						<p class="small text-muted mb-3"><em>Coordenadora</em></p>
+					
+						<p class="mb-1">Carolina de Campos Carvalho</p>
+						<p class="small text-muted mb-0"><em>Instituto de Comunicação e Informação Científica e Tecnológica em Saúde - Icict/Fiocruz</em></p>
+						<p class="small text-muted mb-3"><em>Coordenadora</em></p>
+						
 						<p class="mb-1">Mel Bonfim</p>
 						<p class="small text-muted mb-0"><em>Relações Institucionais/PR/Fiocruz</em></p>
 						<p class="small text-muted mb-3"><em>Coordenadora</em></p>
